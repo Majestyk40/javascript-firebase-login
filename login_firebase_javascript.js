@@ -33,6 +33,7 @@ function login(){
 var user = firebase.auth().currentUser;
 
 // Ce qui nous permet de gérer les actions à entreprendre comme l'ouverture d'une page membre
+// Et surtout à vérifier si l'utilisateur est bien dans la base.
 firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
       
